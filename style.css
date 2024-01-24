@@ -1,0 +1,66 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    object-position: center;
+    margin-left: 114px;
+}
+
+.taskbariconhover {
+    background-color: rgb(255, 255, 255);
+    height: 3px;
+    width: 3px;
+    position: absolute;
+    bottom: -15.6px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 17px;
+    opacity: 0; /* Initially hidden */
+    border-radius: 5px;
+    transition: opacity 0.3s; /* Smooth transition for opacity */
+}
+
+.taskbariconhover:hover {
+    opacity: 0.1; /* Visible when hovered - 10% opacity */
+    transition: opacity 0.5s; /* Smooth transition for opacity change */
+}
+
+#hover1 {
+    margin-left: -102px;
+}
+
+#hover2 {
+    margin-left: -61px;
+}
+
+#hover3 {
+    margin-left: -20.2px;
+}
+
+#hover4 {
+    margin-left: 20.5px;
+}
+
+#hover5 {
+    margin-left: 61.3px;
+}
+
+#hover6 {
+    margin-left: 102px;
+}
