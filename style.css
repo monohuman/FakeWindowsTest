@@ -1,66 +1,64 @@
 body, html {
     margin: 0;
     padding: 0;
+    width: 100%;
     height: 100%;
     overflow: hidden;
+    background-color: #2b2b2b;
+    background-size: auto 100%;
+    user-select: none;
 }
 
-.container {
+#taskbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #222;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
+    height: 50px;
+    z-index: 30;
 }
 
-img {
-    height: 100%;
-    width: auto;
-    object-fit: cover;
-    object-position: center;
-    margin-left: 114px;
+.icon {
+    position: relative;
+    margin: auto 9px;
+    height: 24px;
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 50;
+    bottom:0.01136px;
 }
 
-.taskbariconhover {
-    background-color: rgb(255, 255, 255);
-    height: 3px;
-    width: 3px;
+.icon img {
+    max-height: 100%;
+    max-width: 100%;
+    z-index: 50;
+}
+
+.hover-box {
     position: absolute;
-    bottom: -15.6px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 17px;
-    opacity: 0; /* Initially hidden */
-    border-radius: 5px;
-    transition: opacity 0.3s; /* Smooth transition for opacity */
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff10;
+    opacity: 0;
+    transition: opacity 0.1s ease-out, transform 0.1s ease-in-out;
+    transform: scale(0.9);
+    padding:7px;
+    border-radius: 3px;
+    z-index: 40;
 }
 
-.taskbariconhover:hover {
-    opacity: 0.1; /* Visible when hovered - 10% opacity */
-    transition: opacity 0.5s; /* Smooth transition for opacity change */
+.icon:hover .hover-box {
+    opacity: 1;
+    transform: scale(1.1);
 }
 
-#hover1 {
-    margin-left: -102px;
-}
-
-#hover2 {
-    margin-left: -61px;
-}
-
-#hover3 {
-    margin-left: -20.2px;
-}
-
-#hover4 {
-    margin-left: 20.5px;
-}
-
-#hover5 {
-    margin-left: 61.3px;
-}
-
-#hover6 {
-    margin-left: 102px;
+#error-message {
+    z-index: 20;
 }

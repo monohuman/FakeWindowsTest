@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centered Image</title>
+    <title>Windows 11 Taskbar</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="taskbariconhover" id="hover1"></div>
-        <div class="taskbariconhover" id="hover2"></div>
-        <div class="taskbariconhover" id="hover3"></div>
-        <div class="taskbariconhover" id="hover4"></div>
-        <div class="taskbariconhover" id="hover5"></div>
-        <div class="taskbariconhover" id="hover6"></div>
-        <img id="centeredImage" src="image.png" alt="Centered Image">
+    <div id="taskbar">
+        <div class="icon" id="icon1"><img src="icon1.png" alt="Icon 1"><div class="hover-box"></div></div>
+        <div class="icon" id="icon2"><img src="icon2.png" alt="Icon 2"><div class="hover-box"></div></div>
+        <div class="icon" id="icon3"><img src="icon3.png" alt="Icon 3"><div class="hover-box"></div></div>
+        <div class="icon" id="icon4"><img src="icon4.png" alt="Icon 4"><div class="hover-box"></div></div>
+        <div class="icon" id="icon5"><img src="icon5.png" alt="Icon 5"><div class="hover-box"></div></div>
+        <div class="icon" id="icon6"><img src="icon6.png" alt="Icon 6"><div class="hover-box"></div></div>
     </div>
+    
+    <img src="errormessage.png" alt="Error Message" id="error-message" style="display: none; position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%);">
     <script src="script.js"></script>
 </body>
 </html>
